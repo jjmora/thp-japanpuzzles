@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: content-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Aclonica', sans-serif;
+  color: #1F3F68;
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-family: 'Aclonica', sans-serif;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px 0;
+}
+
+.button {
+  height: 35px;
+  font-size: 1em;
+  margin: 20px 0;
+  padding: 4px 15px;
+  border-radius: 3px;
+  border: none;
+  background-color: #5A98D0;
+  box-shadow: 1px 1px 10px 0px #5A98D0;
+  color: aliceblue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3481D7;
+}
+
+.button:active {
+  background-color: #5A98D0;
+  box-shadow: 1px 1px 10px 0px #1F3F68;
+  outline: none;
+  padding-top: 5px;
+  height: 34px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.container {
+  margin: auto;
+  height: 100%;
+  width: 100vw;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container header {
+  display: flex;
+  padding: 20px 0 20px 0;
+  justify-content: center;
+}
+
+header {
+  /* background-color: lightskyblue; */
+}
+
+header img {
+  width: 90%;
+}
+
+.content-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-top {
+  /* background-color: salmon; */
+  display: flex;
+  justify-content: center;
+}
+
+.main-top img {
+  width: 80%;
+}
+
+.main-bottom {
+  padding: 20px;
+  text-align: center;
+  /* background-color: red; */
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+}
+
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+
+.cards .card img {
+  align-self: center;
+  height: 180px;
+  max-width: 90%;
+}
+
+.cards .card p {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer {
+  border-top: 1px solid #1f3f6862;
+  height: 40px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: lightskyblue; */
+}
+
+.footer p:hover {
+  color: #3481D7;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+
+/*Small devices (landscape phones, 576px and up)*/
+
+@media (min-width: 576px) {
+  header img {
+    width: 350px;
+  }
+  .main-top img {
+    width: 80%;
+  }
+  .main-bottom {
+    padding-left: 50px;
+  }
+  .main-bottom p {
+    padding: 10px 80px;
+  }
+  .cards .card img {
+    height: 130px;
+    width: auto;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+  .cards .card p {
+    padding: 10px 80px;
+  }
+}
+
+
+/*Medium devices (tablets, 768px and up)*/
+
+@media (min-width: 768px) {
+  .container header {
+    justify-content: left;
+    margin-left: 50px;
+  }
+  .main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .main-top {
+    width: 60%;
+    padding-right: 50px;
+    /* background: red; */
+  }
+  .main-bottom {
+    width: 40%;
+    /* background: green; */
+    text-align: left;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .main .main-bottom p,
+  .main .main-bottom h1 {
+    text-align: left;
+    padding-left: 0;
+  }
+  .cards {
+    margin-top: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .cards .card {
+    width: 45%;
+  }
+  .cards .card img {
+    width: 230px;
+  }
+  .cards .card p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+
+/*Large devices (desktops, 992px and up)*/
+
+@media (min-width: 992px) {
+  .cards {
+    justify-content: center;
+  }
+  .cards .card {
+    width: 30%;
+  }
+  .cards .card img {
+    height: 150px;
+    width: auto;
+  }
+  .cards .card p {
+    padding: 10px 10px;
+  }
+  .footer {
+    justify-content: center;
+  }
+  .footer p {
+    margin: 0 10px;
+  }
+}
+
+
+/*Extra large devices (large desktops, 1200px and up)*/
+
+@media (min-width: 1200px) {
+  .cards .card {
+    width: 22%;
+  }
+}
