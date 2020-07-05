@@ -40,7 +40,7 @@ h2 {
   border-radius: 3px;
   border: none;
   background-color: #5A98D0;
-  box-shadow: 1px 1px 10px 0px #5A98D0;
+  box-shadow: 1px 1px 5px 0px #5A98D0;
   color: aliceblue;
   font-weight: bold;
   cursor: pointer;
@@ -62,6 +62,10 @@ h2 {
   outline: none;
 }
 
+.modal-button {
+  margin-right: 20px;
+}
+
 .container {
   margin: auto;
   height: 100%;
@@ -76,10 +80,6 @@ h2 {
   display: flex;
   padding: 20px 0 20px 0;
   justify-content: center;
-}
-
-header {
-  /* background-color: lightskyblue; */
 }
 
 header img {
@@ -114,25 +114,25 @@ header img {
   /* background-color: red; */
 }
 
-.cards {
+.m-cards {
   display: flex;
   flex-direction: column;
 }
 
-.cards .card {
+.m-cards .m-card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 10px;
 }
 
-.cards .card img {
+.m-cards .m-card img {
   align-self: center;
   height: 180px;
   max-width: 90%;
 }
 
-.cards .card p {
+.m-cards .m-card p {
   text-align: center;
   padding: 10px;
 }
@@ -173,13 +173,13 @@ No media query for `xs` since this is the default */
   .main-bottom p {
     padding: 10px 80px;
   }
-  .cards .card img {
+  .m-cards .m-card img {
     height: 130px;
     width: auto;
     align-self: center;
     margin-bottom: 20px;
   }
-  .cards .card p {
+  .m-cards .m-card p {
     padding: 10px 80px;
   }
 }
@@ -216,19 +216,19 @@ No media query for `xs` since this is the default */
     text-align: left;
     padding-left: 0;
   }
-  .cards {
+  .m-cards {
     margin-top: 20px;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-  .cards .card {
+  .m-cards .m-card {
     width: 45%;
   }
-  .cards .card img {
+  .m-cards .m-card img {
     width: 230px;
   }
-  .cards .card p {
+  .m-cards .m-card p {
     padding-left: 30px;
     padding-right: 30px;
   }
@@ -241,17 +241,17 @@ No media query for `xs` since this is the default */
   h1 {
     font-size: 2em;
   }
-  .cards {
+  .m-cards {
     justify-content: center;
   }
-  .cards .card {
+  .m-cards .m-card {
     width: 30%;
   }
-  .cards .card img {
+  .m-cards .m-card img {
     height: 150px;
     width: auto;
   }
-  .cards .card p {
+  .m-cards .m-card p {
     padding: 10px 10px;
   }
   .footer {
@@ -266,7 +266,7 @@ No media query for `xs` since this is the default */
 /*Extra large devices (large desktops, 1200px and up)*/
 
 @media (min-width: 1200px) {
-  .cards .card {
+  .m-cards .m-card {
     width: 22%;
   }
   h1 {
